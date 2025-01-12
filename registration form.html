@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Oswald&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: gainsboro;
+    }
+
+    form {
+        background-color: white;
+        height: 650px;
+        width: 400px;
+        margin-top: 50px;
+        border-top: 5px solid rgb(224, 168, 15);
+        border-radius: 5px
+    }
+
+    h1 {
+        font-family: "Oswald", serif;
+
+    }
+
+    .first1 {
+        display: flex;
+    }
+
+    .first {
+
+
+        max-width: 250px;
+        min-width: 280px;
+        height: 30px;
+        margin-bottom: 20px;
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .img1 {
+        text-align: left;
+        border: 1px solid black;
+        padding: 6px 5px;
+        height: 20px;
+        width: 20px;
+        margin-left: 40px;
+        color: grey;
+        border-right: none;
+    }
+
+    .third1 {
+        display: flex;
+    }
+
+    .third {
+        max-width: 250px;
+        min-width: 280px;
+        height: 30px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+
+    }
+
+    .img2 {
+        border: 1px solid black;
+        padding: 6px 5px;
+        height: 20px;
+        width: 20px;
+        margin-left: 40px;
+        color: grey;
+        border-right: none;
+    }
+    .third2 {
+        display: flex;
+    }
+
+    .third {
+        max-width: 250px;
+        min-width: 280px;
+        height: 30px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+
+    }
+
+    .img2 {
+        border: 1px solid black;
+        padding: 6px 5px;
+        height: 20px;
+        width: 20px;
+        margin-left: 40px;
+        color: grey;
+        border-right: none;
+    }
+    .second1 {
+        display: flex;
+    }
+
+    .second {
+        max-width: 100px;
+        min-width: 80px;
+        height: 30px;
+        margin-bottom: 20px;
+        border: 1px solid black;
+        
+
+    }
+
+    .img3 {
+        border: 1px solid black;
+        padding: 6px 5px;
+        height: 20px;
+        width: 20px;
+        margin-left: 33px;
+        color: grey;
+        border-right: none;
+        margin-left: 40px;
+    }
+
+
+    .checkbox label {
+        padding-left: 40px;
+
+    }
+
+    .gender {
+        margin-right: 180px;
+        margin-top: 10px;
+    }
+    .checkbox{
+        color: yellow;
+    }
+
+    #country {
+        max-width: 290px;
+        min-width: 310px;
+        height: 30px;
+        margin-top: 20px;
+
+    }
+
+    .agreements {
+        margin-right: 45px;
+        margin-top: 20px;
+    }
+
+    .agreements2 {
+        margin-right: 88px;
+        margin-top: 20px;
+    }
+
+    #Register {
+        margin-top: 20px;
+    }
+
+    .register {
+        margin-top: 20px;
+
+    }
+
+    #submit {
+        width: 310px;
+        height: 30px;
+        border: none;
+        background-color: rgb(224, 167, 10);
+        color: white;
+        transition: all 1sec;
+
+    }
+    #submit:hover{
+        background-color: rgb(180, 136, 15);
+        color: black;
+        transition: all 1sec;
+    }
+</style>
+
+<body>
+    <center>
+        <form method="post">
+            <h1>Responsive Registration <br> Form</h1>
+            <div class="first1">
+
+                <img class="img1" src="icons8-email-50.png" alt=""> <label for="email"><input type="Email"
+                        placeholder="Email" class="first" required></label>
+            </div>
+            <div class="third1">
+                <img class="img2" src="icons8-password-30.png" alt="">
+                <label for="password"><input type="password" placeholder="Password" class="third" required></label>
+            </div>
+            <div class="third2">
+                <img class="img2" src="icons8-password-30.png" alt="">
+                <label for="password"><input type="password" placeholder="Repassword" class="third" required></label>
+            </div>
+            <div class="second1">
+                <img class="img3" src="icons8-name-50.png" alt="">
+                <label for="Username"><input type="name" placeholder="name" class="second" required></label>
+                <img class="img3" src="icons8-name-50.png" alt="">
+                <label for="lastname"><input type="Lastname" placeholder="Lastname" class="second" required></label>
+            </div>
+            <div class="gender">
+                <input type="checkbox" name="male" class="checkbox">
+                <label for="male">Male</label>
+                <input type="checkbox" name="Female" class="checkbox">
+                <label for="Female">Female</label>
+            </div>
+
+            <select name="country" id="country">
+                <option value="pakistan">pakistan</option>
+                <option value="india">india</option>
+                <option value="japan">japan</option>
+                <option value="china">china</option>
+            </select>
+            <div class="agreements">
+                <input type="checkbox" name="agreement" id="agreement1">
+                <label for="1">I agree with the terms and conditions</label>
+            </div>
+            <div class="agreements2">
+                <input type="checkbox" name="agreement2" id="agreement2">
+                <label for="2">I want to receive the newletter</label>
+            </div>
+            <div class="register">
+                <label for="register"><input type="button" value="Register" id="submit"></label>
+            </div>
+        </form>
+    </center>
+
+
+</body>
+
+</html>
